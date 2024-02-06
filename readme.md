@@ -4,7 +4,8 @@ catatan cheat sheet development haekal
 
 ## Table of Contents
 
-- [JSDatatable](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md)
+- [JSDatatable](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#jsdatatable)
+- [JSDatetimeNow](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#datetimenow)
 - [JQUERYdataCollector](https://github.com/hcalldee/mycheatsheet/blob/main/jqCS.md)
 
 ## Contact
