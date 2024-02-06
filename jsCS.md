@@ -74,7 +74,7 @@ function date time now
 contoh fungsi alert bootbox
 ```
 bootbox.confirm({
-        message:"Apakah Anda Ingin Menghapus Data Skrining",
+        message:"Apakah Anda Ingin Menghapus Data",
         buttons: {
               confirm: {
               label: 'Ya',
