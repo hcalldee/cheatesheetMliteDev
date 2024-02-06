@@ -3,12 +3,14 @@
 catatan cheat sheet development mlite by haekal
 
 ## Table of Contents
-
-- [JSDatatable](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#jsdatatable)
-- [JSDatetimeNow](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#datetimenow)
-- [JSBootboxAlert](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#bootbox)
-- [JQUERYdataCollector](https://github.com/hcalldee/mycheatsheet/blob/main/jqCS.md)
-- [PHPDatabaseColumnFetcher](https://github.com/hcalldee/mycheatsheet/blob/main/PHPCS.md#database_column_fetch)
+- JS<br>
+  [JSDatatable](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#jsdatatable)<br>
+  [JSDatetimeNow](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#datetimenow)<br>
+  [JSBootboxAlert](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#bootbox)<br>
+- JQUERY<br>
+  [JQUERYdataCollector](https://github.com/hcalldee/mycheatsheet/blob/main/jqCS.md)<br>
+- PHP<br>
+  [PHPDatabaseColumnFetcher](https://github.com/hcalldee/mycheatsheet/blob/main/PHPCS.md#database_column_fetch)
 
 ## Contact
 
