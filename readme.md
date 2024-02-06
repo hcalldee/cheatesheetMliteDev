@@ -15,7 +15,10 @@ catatan cheat sheet development mlite by haekal
   - [PHPDatabaseColumnFetcher](https://github.com/hcalldee/mycheatsheet/blob/main/PHPCS.md#database_column_fetch)
   - [PHP Database Column Fetcher Controller](https://github.com/hcalldee/mycheatsheet/blob/main/PHPCS.md#controller_fetch_column_db)
   - [Query Wrapper](https://github.com/hcalldee/mycheatsheet/blob/main/PHPCS.md#query_wraper_crud)
+    - [Read Data](https://github.com/hcalldee/mycheatsheet/blob/main/PHPCS.md#create_data)
     - [Read Data](https://github.com/hcalldee/mycheatsheet/blob/main/PHPCS.md#read_data)
+    - [Read Data](https://github.com/hcalldee/mycheatsheet/blob/main/PHPCS.md#edit_data)
+    - [Read Data](https://github.com/hcalldee/mycheatsheet/blob/main/PHPCS.md#delete_data)
   
 
 ## Contact
