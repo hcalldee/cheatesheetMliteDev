@@ -97,3 +97,50 @@ bootbox.confirm({
         }
       });
 ```
+
+## buat_html_otomatis_dari_fetch_db
+buat elemen otomatis dari fetch struktur database 
+
+```
+$(document).ready(function () {
+
+        var baseURL = mlite.url + '/' + mlite.admin;
+        event.preventDefault();
+
+        var url = baseURL + '/rawat_inap/tablecolumn?t=' + mlite.token;
+        $.post(url, {
+            table: 'penilaian_medis_ranap',
+        }, function (data) {
+            // $('#dynamicForm').html("")
+            let dataset = JSON.parse(JSON.parse(data))
+            // console.log(dataset);
+            // console.log(JSON.parse(data));
+            $.each(dataset, function (index, field) {
+                $('#dynamicForm').append(generateFormField(field));
+            });
+            // Add submit button
+            $('#dynamicForm').append('<button type="submit" class="btn btn-primary">Submit</button>');
+        });
+
+
+        function generateFormField(field) {
+            var $formGroup = $('<div class="form-group"></div>');
+
+            if (field.type === 'varchar') {
+                $formGroup.append('<label for="' + field.name + '">' + field.label + '</label>').append('<input type="text" class="form-control" id="' + field.name + '" name="' + field.name + '" ' + (field.maxlength ? 'maxlength="' + field.maxlength + '"' : '') + '>');
+            } else if (field.type === 'datetime') {
+                $formGroup.append('<label for="' + field.name + '">' + field.label + '</label>').append('<input type="date" class="form-control" id="' + field.name + '" name="' + field.name + '">');
+            } else if (field.type === 'text') {
+                $formGroup.append('<label for="' + field.name + '">' + field.label + '</label>').append('<textarea class="form-control" id="' + field.name + '" name="' + field.name + '" ' + (field.maxlength ? 'maxlength="' + field.maxlength + '"' : '') + '></textarea>');
+            } else if (field.type === 'enum') {
+                var $select = $('<select class="form-control" id="' + field.name + '" name="' + field.name + '"></select>');
+                $.each(field.options, function (i, option) {
+                    $select.append('<option value="' + option + '">' + option + '</option>');
+                });
+                $formGroup.append('<label for="' + field.name + '">' + field.label + '</label>').append($select);
+            }
+
+            return $formGroup;
+        }
+    });
+```
