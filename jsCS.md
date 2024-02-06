@@ -1,3 +1,4 @@
+##jsdatatable
 code redeclare datatable biar nggk conflict waktu refresh data
 ```
             $.post(url, data_form,function(data) {
@@ -45,6 +46,7 @@ code redeclare datatable biar nggk conflict waktu refresh data
             })
 ```
 
+##datetimenow
 function date time now
 
 ```
