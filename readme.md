@@ -22,6 +22,13 @@ catatan cheat sheet development mlite by haekal
     </details>
     
 -  <details>
+    <summary>VS Code Snippets</summary>
+      JQUERY Cheat Sheet
+    
+    - [VS Code Snippets](https://github.com/hcalldee/cheatesheetMliteDev/blob/main/SnippetsVScode.md#Snippets)
+    
+    </details>
+-  <details>
     <summary>PHP</summary>
       PHP Cheat Sheet
     
