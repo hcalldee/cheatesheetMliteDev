@@ -14,3 +14,15 @@ fetch database column using php and query
         return $result;
     }
 ```
+
+# controller_fetch_column_db
+
+controller untuk return column database dari model
+
+```
+public function postTableColumn(){
+      $_POST['table'];
+      echo json_encode($this->convertToJavascriptArray($this->core->getTableColumn($_POST['table'])));
+      exit();
+    }
+```
