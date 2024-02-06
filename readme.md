@@ -6,6 +6,7 @@ catatan cheat sheet development mlite by haekal
 
 - [JSDatatable](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#jsdatatable)
 - [JSDatetimeNow](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#datetimenow)
+- [JSBootboxAlert](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#bootbox)
 - [JQUERYdataCollector](https://github.com/hcalldee/mycheatsheet/blob/main/jqCS.md)
 
 ## Contact
