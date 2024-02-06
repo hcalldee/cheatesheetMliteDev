@@ -1,49 +1,49 @@
-file cheatsheet haekal
+# Project Title
 
-code redeclare datatable biar nggk conflict waktu refresh data
+A brief description of your project.
 
-```
-            $.post(url, data_form,function(data) {
-              data = JSON.parse(data)
-                    if ($.fn.DataTable.isDataTable('#table-skrining')) {
-                        // #table-skrining is a DataTable, so destroy it
-                        $('#table-skrining').DataTable().destroy();
-                        $('#table-skrining tbody').html(''); // Optional: Remove the table content if needed
-                    }
-                    // fetch data from response
-                    data.forEach(ele => {
-                      $('#table-skrining tbody').append(`
-                      <tr class="laporanoperasi">
-                        <td>${ele.tanggal}</td>
-                        <td>${ele.no_rkm_medis}</td>
-                        <td>${ele.nm_pasien}</td>
-                        <td>${ele.diagnosa}</td>
-                        <td>
-                          <button class="btn btn-success btn-xs detail_skrining" data-tanggal="${ele.tanggal}" data-nr="${ele.no_rawat}">Detail</button>
-                          <button class="btn btn-info btn-xs edit_skrining" data-tanggal="${ele.tanggal}" data-nr="${ele.no_rawat}">Edit</button>
-                          <button class="btn btn-danger btn-xs hapus_skrining" data-tanggal="${ele.tanggal}" data-nr="${ele.no_rawat}">Hapus</button>
-                        </td>
-                      </tr>
-                      `)
-                    });
-                    
-                    // redeclere datatable
-                    $('#table-skrining').DataTable({
-                      // "order": [[ 0, "desc" ]],
-                      "pagingType": "full",
-                      "language": {
-                        "paginate": {
-                          "first": "&laquo;",
-                          "last": "&raquo;",
-                          "previous": "‹",
-                          "next":     "›"
-                        },
-                        "search": "",
-                        "searchPlaceholder": "Search..."
-                      },
-                      "lengthChange": false,
-                      // "scrollX": true,
-                      dom: "<<'data-table-title'><'datatable-search'f>><'row'<'col-sm-12'tr>><<'pmd-datatable-pagination' l i p>>"
-                    });
-            })
-```
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Introduction
+
+Provide a concise introduction to your project. Explain what it does and why it's useful.
+
+## Features
+
+List the key features of your project.
+
+## Getting Started
+
+### Prerequisites
+
+Specify any prerequisites or dependencies needed to run your project.
+
+### Installation
+
+Provide step-by-step instructions on how to install and set up your project.
+
+## Usage
+
+Explain how to use your project. Include examples or code snippets if applicable.
+
+## Contributing
+
+If you'd like to contribute, please follow the [Contribution Guidelines](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [License Name](LICENSE) - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions or feedback, feel free to contact me at [your.email@example.com](mailto:your.email@example.com).
