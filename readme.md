@@ -4,7 +4,7 @@ A brief description of your project.
 
 ## Table of Contents
 
-- [JSDatatable](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md){:target="_blank" rel="noopener"}
+- [JSDatatable](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md)
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
