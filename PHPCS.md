@@ -30,6 +30,37 @@ public function postTableColumn(){
 # query_wraper_crud
 
 ## create_data
+cara save data menggunakan query builder
+
+    //$_POST berisi data yang ingin disimpan
+    /*
+    struktur nya seperti berikut 
+    
+    array(
+    'Column'=>'Value yang dirubah',
+    ...
+    )
+    
+    dalam bentuk JSON di client
+    
+    let data = {
+        key:"value",
+        ...
+    }
+    
+    */
+
+    //fungsi pada controller
+    // cek data terlebih dahulu apakah sudah ada ?
+    if(!$this->core->mysql('tabel')->where('nama_column_pivot',$pivot)->oneArray()){
+        // jika tidak ada
+        $this->core->mysql('tabel')->save($_POST);
+        echo json_encode('data disimpan');
+    }else{
+        // jika sudah ada
+        echo json_encode('data duplikat');
+    }
+    
 
 ## read_data
 cara read data dari database menggunakan query builder
@@ -52,6 +83,28 @@ cara read data dari database menggunakan sql raw
         
 
 ## edit_data
+cara edit data menggunakan query builder
+
+    //$_POST berisi data yang ingin diubah
+    /*
+    struktur nya seperti berikut 
+    
+    array(
+    'Column'=>'Value yang dirubah',
+    ...
+    )
+    
+    dalam bentuk JSON di client
+    
+    let data = {
+        key:"value",
+        ...
+    }
+    
+    */
+
+    //fungsi pada controller
+    $this->core->mysql('tabel')->where('nama_column_pivot',$pivot)->update($_POST);
 
 ## delete_data
 
