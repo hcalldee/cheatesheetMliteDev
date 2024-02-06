@@ -52,6 +52,7 @@ cara save data menggunakan query builder
 
     //fungsi pada controller
     // cek data terlebih dahulu apakah sudah ada ?
+    $pivot = $_POST['nama_column_pivot'];
     if(!$this->core->mysql('tabel')->where('nama_column_pivot',$pivot)->oneArray()){
         // jika tidak ada
         $this->core->mysql('tabel')->save($_POST);
@@ -85,7 +86,7 @@ cara read data dari database menggunakan sql raw
 ## edit_data
 cara edit data menggunakan query builder
 
-    //$_POST berisi data yang ingin diubah
+    //$pivot berisi data yang ingin diubah
     /*
     struktur nya seperti berikut 
     
@@ -104,7 +105,29 @@ cara edit data menggunakan query builder
     */
 
     //fungsi pada controller
+    $pivot = $_POST['nama_column_pivot'];
     $this->core->mysql('tabel')->where('nama_column_pivot',$pivot)->update($_POST);
 
 ## delete_data
+cara delete data menggunakan query builder
+
+    //$pivot berisi data yang ingin diubah
+    /*
+    struktur nya seperti berikut 
+    
+    array(
+    'Column'=>'Value yang dirubah',
+    ...
+    )
+    
+    dalam bentuk JSON di client
+    
+    let data = {
+        key:"value",
+        ...
+    }
+    
+    */
+    $pivot = $_POST['nama_column_pivot'];
+    $this->core->mysql('tabel')->where('nama_column_pivot',$pivot)->delete();
 
