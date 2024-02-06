@@ -7,6 +7,8 @@ catatan cheat sheet development mlite by haekal
   [JSDatatable](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#jsdatatable)<br>
   [JSDatetimeNow](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#datetimenow)<br>
   [JSBootboxAlert](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#bootbox)<br>
+  [HTML Otomizer by Fetch Column](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#buat_html_otomatis_dari_fetch_db)<br>
+  
 - JQUERY<br>
   [JQUERYdataCollector](https://github.com/hcalldee/mycheatsheet/blob/main/jqCS.md)<br>
 - PHP<br>
