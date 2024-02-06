@@ -113,8 +113,6 @@ $(document).ready(function () {
         }, function (data) {
             // $('#dynamicForm').html("")
             let dataset = JSON.parse(JSON.parse(data))
-            // console.log(dataset);
-            // console.log(JSON.parse(data));
             $.each(dataset, function (index, field) {
                 $('#dynamicForm').append(generateFormField(field));
             });
