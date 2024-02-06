@@ -32,7 +32,7 @@ public function postTableColumn(){
 ## create_data
 
 ## read_data
-cara read data dari database
+cara read data dari database menggunakan query builder
 
     //read simple query wrapper return multi data array    
     $data = $this->core->mysql('nama_table')->where('nama_column',$_POST['data_dikirim'])->toArray();
@@ -44,10 +44,11 @@ cara read data dari database
     $data = $this->core->mysql('nama_table')->where('nama_column',$_POST['data_dikirim'])->toJson();
 
 cara read data dari database menggunakan sql raw
-        $sql =  "statemen sql query disini";
-        $stmt = $this->core->mysql()->pdo()->prepare($sql);
-        $stmt->execute();
-        $rows = $stmt->fetchAll();
+
+    $sql = "statemen sql query disini";
+    $stmt = $this->core->mysql()->pdo()->prepare($sql);
+    $stmt->execute();
+    $rows = $stmt->fetchAll();
         
 
 ## edit_data
