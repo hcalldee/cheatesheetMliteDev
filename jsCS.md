@@ -69,3 +69,31 @@ function date time now
       return formattedDateTime;
     }
 ```
+
+## bootbox
+contoh fungsi alert bootbox
+```
+bootbox.confirm({
+        message:"Apakah Anda Ingin Menghapus Data Skrining",
+        buttons: {
+              confirm: {
+              label: 'Ya',
+              className: 'btn-primary'
+              },
+              cancel: {
+              label: 'Tidak',
+              className: 'btn-default'
+              }
+              },
+        callback:function(result){
+          // ketika ditekan tombol ya
+          if (result){
+            
+          }
+          // ketika ditekan tombol tidak
+            else{
+
+            }
+        }
+      });
+```
