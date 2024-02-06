@@ -4,7 +4,7 @@ A brief description of your project.
 
 ## Table of Contents
 
-- [https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md](#JSDatatable)
+- [JSDatatable](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md)
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
