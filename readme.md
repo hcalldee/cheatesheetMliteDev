@@ -8,6 +8,7 @@ catatan cheat sheet development mlite by haekal
 - [JSDatetimeNow](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#datetimenow)
 - [JSBootboxAlert](https://github.com/hcalldee/mycheatsheet/blob/main/jsCS.md#bootbox)
 - [JQUERYdataCollector](https://github.com/hcalldee/mycheatsheet/blob/main/jqCS.md)
+- [PHPDatabaseColumnFetcher](https://github.com/hcalldee/mycheatsheet/blob/main/PHPCS.md#database_column_fetch)
 
 ## Contact
 
