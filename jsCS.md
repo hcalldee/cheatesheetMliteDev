@@ -44,3 +44,26 @@ code redeclare datatable biar nggk conflict waktu refresh data
                     });
             })
 ```
+
+function date time now
+
+```
+    function getCurrentDateTimeFormatted() {
+      const now = new Date();
+
+      // Get date components
+      const year = now.getFullYear();
+      const month = String(now.getMonth() + 1).padStart(2, '0');
+      const day = String(now.getDate()).padStart(2, '0');
+
+      // Get time components
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+
+      // Format: Y-m-d H:i:s
+      const formattedDateTime = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+
+      return formattedDateTime;
+    }
+```
