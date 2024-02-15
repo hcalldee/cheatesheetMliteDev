@@ -61,5 +61,11 @@ copas code dibawah
 		"body": ["{? $$this->core->debug($) ?}"],
 		"description": "debug di view"
 	},
+	"bootbox": {
+		"prefix": ["botbox", "bbox"],
+		"body": ["bootbox.confirm({\nmessage:'Apakah Anda Ingin Menghapus Jadwal Pemberian',\nbuttons: {\nconfirm: {\nlabel: 'Ya',\nclassName: 'btn-primary'\n},\ncancel: {\nlabel: 'Tidak',\nclassName: 'btn-default'\n}\n},\ncallback:function(result){\nif (result){\n\n}\n}\n}) "],
+		"description": "bootbox"
+	},
   }
+
 ```
