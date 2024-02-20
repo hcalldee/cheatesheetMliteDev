@@ -16,3 +16,13 @@ jquery checkbox clicked validation
       console.log("Checkbox is not checked");
   }
 ```
+
+jquery hidden prop
+
+```
+  if ($("#myElement").is(':hidden')) {
+      console.log("The element is hidden.");
+  } else {
+      console.log("The element is visible.");
+  }
+```
