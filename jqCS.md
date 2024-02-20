@@ -21,8 +21,8 @@ jquery hidden prop
 
 ```
   if ($("#myElement").is(':hidden')) {
-      console.log("The element is hidden.");
+      $("#myElement").prop('hidden', false);
   } else {
-      console.log("The element is visible.");
+      $("#myElement").prop('hidden', true);
   }
 ```
