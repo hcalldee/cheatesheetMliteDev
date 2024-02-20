@@ -66,6 +66,11 @@ copas code dibawah
 		"body": ["bootbox.confirm({\nmessage:'Apakah Anda Ingin Menghapus Jadwal Pemberian',\nbuttons: {\nconfirm: {\nlabel: 'Ya',\nclassName: 'btn-primary'\n},\ncancel: {\nlabel: 'Tidak',\nclassName: 'btn-default'\n}\n},\ncallback:function(result){\nif (result){\n\n}\n}\n}) "],
 		"description": "bootbox"
 	},
+"datatableSet": {
+			"prefix": ["datatableset", "dtb"],
+			"body": ["$('#table-obatluar').DataTable({\n    \"pagingType\": \"full\",\n    \"language\": {\n      \"paginate\": {\n        \"first\": \"&laquo;\",\n        \"last\": \"&raquo;\",\n        \"previous\": \"‹\",\n        \"next\":     \"›\"\n      },\n      \"search\": \"\",\n      \"searchPlaceholder\": \"Search...\"\n    },\n    \"lengthChange\": false,\n     dom: \"<<'data-table-title'><'datatable-search'f>><'row'<'col-sm-12'tr>><<'pmd-datatable-pagination' l i p>>\"\n  });"],
+			"description": "datatable"
+		},
   }
 
 ```
