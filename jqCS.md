@@ -6,3 +6,13 @@ $('.className').each(function () {
   data_form[$(this).attr('id')] = $(this).val()
 })
 ```
+
+jquery checkbox clicked validation
+
+```
+  if ($("#myCheckbox").is(":checked")) {
+      console.log("Checkbox is checked");
+  } else {
+      console.log("Checkbox is not checked");
+  }
+```
