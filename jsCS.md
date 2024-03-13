@@ -70,6 +70,29 @@ function date time now
     }
 ```
 
+## fungsi datetimepicker 
+contoh datetimepicker automatic refresh
+```
+// on html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+// on php controller
+$this->core->addCSS(url('assets/css/bootstrap-datetimepicker.css'));
+$this->core->addJS(url('assets/jscripts/moment-with-locales.js'));
+$this->core->addJS(url('assets/jscripts/bootstrap-datetimepicker.js'));
+
+// on script js
+$(document).ready(function () {
+            // Function to update default date of datetime picker every second
+            function updateDefaultDate() {
+            $('.tanggal').val(moment().format('YYYY-MM-DD HH:mm:ss')); // Update input field value
+            }
+            
+            // Update default date every second
+            setInterval(updateDefaultDate, 1000);
+});
+```
+
 ## bootbox
 contoh fungsi alert bootbox
 ```
