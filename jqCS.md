@@ -2,9 +2,12 @@ jquery each for collect data from form_data
 
 ```
 let data_form = {}
-$('.className').each(function () {
-  data_form[$(this).attr('id')] = $(this).val()
-})
+$('.data-exam').each(function () {
+  const id = $(this).attr('id');
+  if (!data_form.hasOwnProperty(id)) {
+    data_form[id] = $(this).val();
+  }
+});
 ```
 
 jquery checkbox clicked validation
