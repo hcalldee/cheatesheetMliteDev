@@ -29,3 +29,24 @@ jquery hidden prop
       $("#myElement").prop('hidden', true);
   }
 ```
+
+
+selectator redefining collection
+```
+ $('#kd_pj').change(function () {
+      let baseURL = mlite.url + '/' + mlite.admin;
+      let url    = baseURL + '/dokter_ralan/ambilPaketOperasi?t=' + mlite.token;
+      let data_form = {
+        kd_pj:$(this).val()
+      }
+      $.post(url, data_form,function(data) {
+        data = JSON.parse(data)
+        $("#kode_paket").selectator('destroy');
+        $("#kode_paket").empty();
+        data.forEach(ele => {
+          $("#kode_paket").append($('<option>').val(ele.kode_paket).text(`${ele.nm_perawatan} - (${ele.kode_paket})`));
+        });
+        $("#kode_paket").selectator();
+      });
+    })
+```
